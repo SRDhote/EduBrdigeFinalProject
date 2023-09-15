@@ -25,13 +25,17 @@ public class RadioBtnTest extends WebTestBase{
         radioBtnPage = new RadioBtnPage();
     }
 
-    @Test
+    @Test(description = "verify the radio Button")
     public void SelectRadioBtn() {
         radioBtnPage.SelectcookiesAcceptBtn();
        radioBtnPage.SelectMenBtn();
        radioBtnPage.SelectClothesBtn();
        radioBtnPage.ClickonSortByBtn();
        radioBtnPage.ClickonRdioBtnBtn();
+    }
+    @AfterMethod
+    public void aftermethod(){
+        driver.close();
     }
 
 }

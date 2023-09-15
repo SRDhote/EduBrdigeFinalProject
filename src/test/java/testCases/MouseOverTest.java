@@ -36,18 +36,6 @@ public class MouseOverTest extends WebTestBase {
         //softAssert.assertAll();
     }
 
-    /*@Test(priority = 2)
-    public void ClickOnRadioBtn() {
-
-        SoftAssert softAssert = new SoftAssert();
-        mouseOverPage.mouseOverAction1();
-        mouseOverPage.selectTshirt();
-        mouseOverPage.ClickonSortBY();
-        mouseOverPage.radioBtnSelection();
-
-        softAssert.assertEquals(mouseOverPage.radioBtnSelection(), "isSeleced");
-        softAssert.assertAll();
-    }*/
 
     @AfterMethod
     public void afterMethod() {
