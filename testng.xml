@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="listenersutility.IAnnotationTransformerListener"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/SHREE/IdeaProjects/EduBrdgeFinalProject">
+        <classes>
+          <!--//  <class name="testCases.CheckBoxTest"/>
+           // <class name="testCases.HomeTest"/>-->
+            <class name="testCases.LoginTest"/>
+            <class name="testCases.MouseOverTest"/>
+            <class name="testCases.SearchTest"/>
+
+        </classes>
+    </test>
+</suite>
