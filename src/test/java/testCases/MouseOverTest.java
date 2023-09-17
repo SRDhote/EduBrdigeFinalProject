@@ -11,34 +11,27 @@ import testbase.WebTestBase;
 public class MouseOverTest extends WebTestBase {
     public MouseOverPage mouseOverPage;
     public LoginPage loginPage;
-
     MouseOverTest() {
         super();
     }
-
     @BeforeMethod
     public void beforeMethod() {
         intilization();
         loginPage = new LoginPage();
-
         mouseOverPage = new MouseOverPage();
     }
-
     @Test(priority = 1, description = "Verify Mouse Over Action")
     public void verifyMouseOverAction() {
-       // SoftAssert softAssert = new SoftAssert();
-
+        SoftAssert softAssert = new SoftAssert();
+        mouseOverPage.SelectcookiesAcceptBtn();
         mouseOverPage.mouseOverAction1();
-
-        mouseOverPage.selectTshirt1();
-
-       // softAssert.assertEquals(mouseOverPage.selectNewArrivals(), "New Arrivals","text match");
-        //softAssert.assertAll();
+        //mouseOverPage.selectTshirt1();
+        softAssert.assertEquals(mouseOverPage.selectNewArrivals(), "New Arrivals","text match");
+        softAssert.assertAll();
     }
-
-
     @AfterMethod
+
     public void afterMethod() {
-        //driver.close();
+        driver.close();
     }
 }

@@ -6,7 +6,6 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import pages.LoginPage;
-
 import testbase.WebTestBase;
 
 public class LoginTest extends WebTestBase {

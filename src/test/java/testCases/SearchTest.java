@@ -1,5 +1,4 @@
 package testCases;
-
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -23,19 +22,15 @@ public class SearchTest extends WebTestBase {
         loginPage = new LoginPage();
         searchPage = new SearchPage();
     }
-
     @Test(description = "Verify search button")
-
     public void verifySearchButton() {
         SoftAssert softAssert = new SoftAssert();
         searchPage.enterSearchText(properties.getProperty("searchProduct"));
         softAssert.assertEquals(searchPage.isDislpay(), "SHOWING RESULTS FOR \"shirt\"", "Text match");
         // softAssert.assertAll();
     }
-
     @AfterMethod
     public void afterMethod() {
         driver.close();
     }
-
 }

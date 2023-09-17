@@ -10,9 +10,8 @@ import pages.MouseOverPage;
 import pages.RadioBtnPage;
 import testbase.WebTestBase;
 
-public class RadioBtnTest extends WebTestBase{
+public class RadioBtnTest extends WebTestBase {
     public RadioBtnPage radioBtnPage;
-
 
     RadioBtnTest() {
         super();
@@ -25,16 +24,16 @@ public class RadioBtnTest extends WebTestBase{
         radioBtnPage = new RadioBtnPage();
     }
 
-    @Test(description = "verify the radio Button")
+    @Test(description = "verify to select Radio Button" )
     public void SelectRadioBtn() {
         radioBtnPage.SelectcookiesAcceptBtn();
-       radioBtnPage.SelectMenBtn();
-       radioBtnPage.SelectClothesBtn();
-       radioBtnPage.ClickonSortByBtn();
-       radioBtnPage.ClickonRdioBtnBtn();
+        radioBtnPage.SelectMenBtn();
+        radioBtnPage.SelectClothesBtn();
+        radioBtnPage.ClickonSortByBtn();
+        radioBtnPage.ClickonRdioBtnBtn();
     }
     @AfterMethod
-    public void aftermethod(){
+    public void afterMethod() {
         driver.close();
     }
 
